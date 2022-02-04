@@ -1,4 +1,4 @@
-@media all and (min-width:600) and (max-width:1000){
+
 body {
     background: rgba(223, 216, 216, 0.986);
   }
@@ -42,7 +42,7 @@ body {
   }
 .error1001{display: none;}
 .error599{display: none;}
-}
+
   @media all and(max-width:599px){
     body{
         background: white;
