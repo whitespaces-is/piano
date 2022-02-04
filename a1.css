@@ -3,6 +3,36 @@ body {
     background: rgba(223, 216, 216, 0.986);
   }
   
+errorMessage {
+  display: block;
+}
+
+main {
+  display: none;
+}
+
+@media alla and (max-width: 1000px) {
+  main {
+    display: block;
+  };
+
+  .errorMessage {
+    display: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  main {
+    display: none;
+  };
+
+  .errorMessage {
+    display: block;
+  }
+
+}
+
+
   h1{
     color: rgb(24, 1, 43);
     text-align: center;
@@ -40,36 +70,5 @@ body {
     margin-right: -3%;
     z-index:2;
   }
-.error1001{display: none;}
-.error599{display: none;}
-
-  @media all and(max-width:599px){
-    body{
-        background: white;
-    }
-     .error1001{display: none;}
-        .h1{display:none}
-        .h3{display:none}
-        .container{display:none}
-        .white{display:none}
-        .black{display:none}
-}
-
-body{
-    background: white;
-}
-
-@media all and (min-width: 1001){
-        .error599{display: none;}
-        .h1{display:none}
-        .h3{display:none}
-        .container{display:none}
-        .white{display:none}
-        .black{display:none}
-    body{
-        background: white;
-    }
-}
-
 
 
