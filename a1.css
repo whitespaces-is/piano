@@ -1,0 +1,75 @@
+@media all and (min-width:600) and (max-width:1000){
+body {
+    background: rgba(223, 216, 216, 0.986);
+  }
+  
+  h1{
+    color: rgb(24, 1, 43);
+    text-align: center;
+  }
+  h3{
+    margin-top: 350px;
+    text-align: center;
+    font-size: large;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+.white {
+    content: "";
+    position: relative;
+    background-color: White;
+    width: 8%;
+    min-width: 10%;
+    height: 250px;
+    
+    border:2px solid #ccc;
+  }
+  
+  .black {
+    content: "";
+    
+    background-color: black;
+    color: white;
+    width: 6%;
+    height: 150px;
+    margin-left: -3%;
+    margin-right: -3%;
+    z-index:2;
+  }
+.error1001{display: none;}
+.error599{display: none;}
+}
+  @media all and(max-width:599px){
+    body{
+        background: white;
+    }
+     .error1001{display: none;}
+        .h1{display:none}
+        .h3{display:none}
+        .container{display:none}
+        .white{display:none}
+        .black{display:none}
+}
+
+body{
+    background: white;
+}
+
+@media all and (min-width: 1001){
+        .error599{display: none;}
+        .h1{display:none}
+        .h3{display:none}
+        .container{display:none}
+        .white{display:none}
+        .black{display:none}
+    body{
+        background: white;
+    }
+}
+
+
+
