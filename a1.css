@@ -3,6 +3,35 @@ body {
     background: rgba(223, 216, 216, 0.986);
   }
   
+.errorMessage {
+  display: block;
+}
+
+main {
+  display: none;
+}
+
+@media all and (max-width: 1000px) {
+  main {
+    display: block;
+  };
+
+  .errorMessage {
+    display: none;
+  }
+}
+
+@media all and (max-width: 600px) {
+  main {
+    display: none;
+  };
+
+  .errorMessage {
+    display: block;
+  }
+
+}
+
   h1{
     color: rgb(24, 1, 43);
     text-align: center;
@@ -28,11 +57,40 @@ body {
     
     border:2px solid #ccc;
   }
+  .white:active {
+    content: "";
+    position: relative;
+    background-color: grey;
+    width: 8%;
+    min-width: 10%;
+    height: 250px;
+    
+    border:2px solid #ccc;
+  }
   
   .black {
     content: "";
     
     background-color: black;
+    color: white;
+    width: 6%;
+    height: 150px;
+    margin-left: -3%;
+    margin-right: -3%;
+    z-index:2;
+  }
+  .black:active {
+    content: "";
+    
+    background-color: rgb(56, 56, 56);
+    color: white;
+    width: 6%;
+    height: 150px;
+    margin-left: -3%;
+    margin-right: -3%;
+    z-index:2;
+  }
+
     color: white;
     width: 6%;
     height: 150px;
