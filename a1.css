@@ -17,7 +17,7 @@ main {
 };
 
 .errorMessage {
-  display: none;
+  display: none!important;
 }
 }
 
